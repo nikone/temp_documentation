@@ -14,6 +14,13 @@ generates inital config and setup files
 $ rails generate stormpath:install
 ```
 
+The generator:
+
+* Inserts `Stormpath::Controller` into your `ApplicationController`
+* Creates an initializer to allow further configuration.
+* Creates a migration that either creates a users table or adds any necessary
+  columns to the existing table.
+
 configure MODEL to use Stormpath
 ```sh
 rails generate stormpath MODEL
